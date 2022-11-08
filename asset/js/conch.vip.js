@@ -921,6 +921,16 @@ var Conch = {
                 });
             }
         },
+	     'Copyright':function(){
+            var $nam = '海螺模版Conch_M005',
+                $web = 'http://www.conch.vip/',
+                $qqh = '52225119/362695000',
+                $qun = '638211',
+                $ver = conchtpl.ver;
+            console.log("%c 模版名称 %c "+$nam+" "+$ver+" (苹果CMSv10)", "background: #030307;color:#fadfa3;padding:5px;font-size:16px;font-weight:bold", "color:#030307;padding:5px;font-size:16px;");
+            console.log("%c 模版官网 %c "+$web+"", "background: #030307;color:#fadfa3;padding:5px;font-size:16px;font-weight:bold", "color:#030307;padding:5px;font-size:16px;");
+            console.log("%c使用模版请联系%c QQ："+$qqh+"  交流群："+$qun+"", "color:#030307;font-size:14px;line-height:32px;", "color:#ff1500;font-size:14px");
+        },
     },
     'Other':{
         'Init': function() {

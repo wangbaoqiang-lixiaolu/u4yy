@@ -759,16 +759,6 @@ var MAC={
     'Desktop':function(s){
         location.href= maccms.path + '/index.php/ajax/desktop?name='+encodeURI(s)+'&url=' + encodeURI(location.href);
     },
-    'Timming':function(){
-        if($('.mac_timming').length==0){
-            return;
-        }
-        var infile = $('.mac_timming').attr("data-file");
-        if(infile==undefined || infile == ''){
-            infile = 'api.php';
-        }
-        var t=(new Image());t.src=maccms.path + '/'+infile+'/timming/index?t='+Math.random();
-    },
     'Error':function(tab,id,name){
 
     },
@@ -918,6 +908,5 @@ $(function(){
     MAC.Ulog.Init();
     //联想搜索初始化
     MAC.Suggest.Init('.mac_wd',1,'');
-    //定时任务初始化
-    MAC.Timming();
+    
 });
